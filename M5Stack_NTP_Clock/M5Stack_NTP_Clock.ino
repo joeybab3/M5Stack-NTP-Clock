@@ -6,7 +6,7 @@
 const char* ssid     = "NETGEAR45";
 const char* password = "orangeflower393";
 
-#define NTP_OFFSET  19800 // In seconds 
+#define NTP_OFFSET  0 // In seconds 
 #define NTP_INTERVAL 60 * 1000    // In miliseconds
 #define NTP_ADDRESS  "pool.ntp.org"
 
@@ -24,7 +24,7 @@ void setup(void) {
   // M5.Lcd.setRotation(1);
   M5.Lcd.fillScreen(TFT_BLACK);
 
-  M5.Lcd.setTextSize(1);
+  M5.Lcd.setTextSize(6);
   M5.Lcd.setTextColor(TFT_YELLOW, TFT_BLACK);
   Serial.println();
   Serial.println();
@@ -47,6 +47,8 @@ void setup(void) {
 void loop() {
   timeClient.update();
   String formattedTime = timeClient.getFormattedTime();
-
+  M5.Lcd.fillScreen(BLACK);
+  M5.Lcd.setCursor(10, 10);
   M5.Lcd.print(formattedTime);
+  delay(1000);
 }
