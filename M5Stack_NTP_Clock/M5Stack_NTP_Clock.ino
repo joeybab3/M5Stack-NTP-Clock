@@ -115,8 +115,6 @@ void loop() {
   }
   else
   {
-    M5.Lcd.setCursor(290, 80);
-    M5.Lcd.println("PM");
     M5.Lcd.setCursor(290, 60);
     M5.Lcd.println("AM");
   }
