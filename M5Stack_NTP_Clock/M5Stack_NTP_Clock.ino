@@ -108,13 +108,16 @@ void loop() {
   M5.Lcd.print(dateStampConstructed);
   M5.Lcd.println(timeStampNoMilitary);
   M5.Lcd.setTextSize(2);
-  M5.Lcd.setCursor(290, 60);
   if(isPm)
   {
+    M5.Lcd.setCursor(290, 80);
     M5.Lcd.println("PM");
   }
   else
   {
+    M5.Lcd.setCursor(290, 80);
+    M5.Lcd.println("PM");
+    M5.Lcd.setCursor(290, 60);
     M5.Lcd.println("AM");
   }
   delay(950);
