@@ -10,7 +10,7 @@ String formattedDate;
 String dayStamp;
 String timeStamp;
 
-#define NTP_OFFSET  -28797 // In seconds for los angeles/san francisco time zone
+#define NTP_OFFSET  -28798 // In seconds for los angeles/san francisco time zone
 #define NTP_INTERVAL 60 * 1000    // In miliseconds
 #define NTP_ADDRESS  "pool.ntp.org"
 
