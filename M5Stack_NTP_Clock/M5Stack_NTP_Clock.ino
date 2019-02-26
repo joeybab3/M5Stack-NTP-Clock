@@ -85,6 +85,11 @@ void loop() {
     isPm = false;
     hourNoMilitary = hour;
   }
+  if(hour == 0)
+  {
+    hour = 0;
+    hourNoMilitary = 12;
+  }
   String hourStampNoMilitary = (String)hourNoMilitary;
   if(hourNoMilitary < 10)
   {
