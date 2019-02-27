@@ -90,10 +90,14 @@ void loop() {
     hour = 0;
     hourNoMilitary = 12;
   }
-  String hourStampNoMilitary = (String)hourNoMilitary;
+  String hourStampNoMilitary;
   if(hourNoMilitary < 10)
   {
-    hourStampNoMilitary = "0"+hourNoMilitary;
+    hourStampNoMilitary = "0"+(String)hourNoMilitary;
+  }
+  else
+  {
+    hourStampNoMilitary = (String)hourNoMilitary;
   }
 
   int daysLeft = 0;
