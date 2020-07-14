@@ -3,8 +3,8 @@
 #include <NTPClient.h>
 #include <WiFiUdp.h>
 
-const char* ssid     = "NETGEAR45";
-const char* password = "orangeflower393";
+const char* ssid     = "SSID";
+const char* password = "PASSWORD";
 
 String formattedDate;
 String dayStamp;
